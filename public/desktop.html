@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <script src="desktop.js"></script>
+    <title>Desktop Web Page</title>
+</head>
+<body onload="start()">
+    <div class="grid-container">
+        <div class="item1">
+            <h1 class="center green bigger">Weather</h1><br />            
+            <h1 class="center green bigger">For the city of <span id="city" class="green center bigger"></span></h1><br />
+            <p class="green big"><b>Current Temp: </b><span class="green big" id="current"></span></p><br />
+            <p class="green big"><b>Minimun Temp: </b><span class="green big" id="min"></span></p><br />
+            <p class="green big"><b>Maximun Temp: </b><span class="green big" id="max"></span></p><br />
+            <p class="green big"><b>Humidity: </b><span class="green big" id="humidity"></span></p><br />
+            <p class="green big"><b>Description: </b><span class="green big" id="description"></span></p>           
+        </div>
+        <div class="item2 center">
+            <p class="red center biggest toppad" id="citytime"></p><span class="red center biggest toppad"> Time</span>
+            <p class="red time" id="time"></p><br />
+            <input type="button" class="button" value="Change Cities" onclick="changeCity()"><br /><br />
+            <p class="red small cityinput" id="message">ONLY cities in the American continents. Two word cities put underscore EX: New_York</p>
+            <input type="text" id="citytext" placeholder="Enter City" class="cityinput white">
+            <input type="button" id="getcity" value="Enter" class="cityinput" onclick="sendcity()">
+        </div>
+        <div class="item3 alignCenter">
+            <img src="https://picsum.photos/400" alt="Random Picture">
+        </div> 
+    
+
+</body>
+</html>
